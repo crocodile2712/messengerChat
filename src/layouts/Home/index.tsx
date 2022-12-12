@@ -1,6 +1,6 @@
 import { styled } from '@mui/material';
 import Box from '@mui/material/Box';
-import Facebook from 'components/faceBook';
+import Facebook from 'components/FaceBook';
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
