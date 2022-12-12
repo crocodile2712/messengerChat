@@ -16,9 +16,9 @@ const HomeLayout = (props: Props) => {
   return (
     <HomeLayoutRoot>
       <Header changeStepProfile1={changeStepProfile1} />
+      <Facebook />
       {children}
       <Footer />
-      <Facebook />
     </HomeLayoutRoot>
   );
 };
