@@ -23,16 +23,20 @@ class MyDocument extends Document {
           <NextScript />
         </body>
         <div id="fb-root"></div>
+
         <div id="fb-customer-chat" className="fb-customerchat"></div>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            window.fbAsyncInit = function() {
+              var chatbox = document.getElementById('fb-customer-chat');
+              chatbox.setAttribute("page_id", "104880895809729");
+              chatbox.setAttribute("attribution", "biz_inbox");
+              window.fbAsyncInit = function() {
               FB.init({
-                xfbml            : true,
-                version          : 'v15.0'
+              xfbml: true,
+              version: 'v15.0'
               });
-            };
             (function(d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0];
               if (d.getElementById(id)) return;
@@ -43,11 +47,6 @@ class MyDocument extends Document {
             `,
           }}
         />
-        <script>
-          {`const chatbox = document.getElementById('fb-customer-chat');
-          chatbox.setAttribute("page_id", "104880895809729");
-          chatbox.setAttribute("attribution", "biz_inbox");`}
-        </script>
       </Html>
     );
   }
