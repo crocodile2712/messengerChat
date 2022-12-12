@@ -1,5 +1,6 @@
 import { styled } from '@mui/material';
 import Box from '@mui/material/Box';
+import Facebook from 'components/faceBook';
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -17,6 +18,7 @@ const HomeLayout = (props: Props) => {
       <Header changeStepProfile1={changeStepProfile1} />
       {children}
       <Footer />
+      <Facebook />
     </HomeLayoutRoot>
   );
 };
