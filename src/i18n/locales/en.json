@@ -1,0 +1,6 @@
+{
+  "schema": {
+    "required": "Required",
+    "validEmail": "Email must be a valid email"
+  }
+}
